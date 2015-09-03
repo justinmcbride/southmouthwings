@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>SAUCES - South Mouth Wings</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great|Cabin+Sketch|Averia+Sans+Libre|Fjalla+One|Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/sauces.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="navbar" class="navbar"></div>
+    
+    <div id="content-container" class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <p class="title-sauce">YOU BETTER NOT</p>
+          <p class="description-sauce">
+            This is no joke.  We are over 1,000,000 on the Scoville Scale.  That tis almost 100x hotter than a jalapeño.  You better pack a lunch cuz this one packs a punch!  Lips on fire is a common side effect.
+          </p>
+
+          <p class="title-sauce">HOT BUFFalo</p>
+          <p class="description-sauce">
+            This blend of spice and peppers is anchored by habanero, a little vinegar for tang.  It's spicy but not "slap yo mama" spicy.  Still pretty damn hot.  No for wussies! Lips will tingle for about 3 minutes.
+          </p>
+
+          <p class="title-sauce">YOU WON'T</p>
+          <p class="description-sauce">
+            This is probably more what you are use to.  Cayenne, jalapeño, crushed red chili, vinegar for tang and some butter to cut the heat (a little).  This will leave you wanting a nice frothy beverage with very little lingering sting.
+          </p>
+
+          <p class="title-sauce">SPICY GARLIC</p>
+          <p class="description-sauce">
+            Cayenne pepper, jalapeño and paprika with fresh ground garlic, tangy vinegar and smooth buttery flavor.  Don't be chicken to try this one.  Is has depth and it packs a nice punch!
+          </p>
+        </div> <!-- End first column -->
+
+        <div class="col-md-4">
+          <p class="title-sauce">HONEY HOT</p>
+          <p class="description-sauce">
+            Sweet and Heat, the perfect blend of peppers, spices and sweet Tupelo Honey (from the Tupelo Trees of Tennessee).  This may have a little more heat than sweet but we think the balance is perfect!
+          </p>
+
+          <p class="title-sauce">​ASAIN ASSULT</p>
+          <p class="description-sauce">
+            Sriracha, soy, ginger, garlic, honey, and a little love.  Ted Cohn's Favorite (He has ordered this one over 100 times).
+          </p>
+          <p class="title-sauce">MEMPHIS SPICY BBQ</p>
+          <p class="description-sauce">
+            Our traditional Memphis BBQ sauce with a punch of cayenne, crushed red chili, jalapeño and a little smoke!
+          </p>
+
+          <p class="title-sauce">MEMPHIS SWEET BBQ</p>
+          <p class="description-sauce">
+            Our traditional Memphis BBQ sauce with honey, molasses and a hint of brown sugar.
+          </p>
+
+          <p class="title-sauce">GRIZZLIES GOLDEN HONEY</p>
+          <p class="description-sauce">
+            This is our #1 best selling sauce.  Honey mustard, champagne vinegar, brown sugar, and a slight touch of our "You Won't" for a tangy, sweet balance and some essence of pepper.
+          </p>
+        </div> <!-- End second column -->
+
+        <div class="col-md-4">
+          <p class="title-sauce">YOU BETTER NOT</p>
+          <p class="description-sauce">
+            This is no joke.  We are over 1,000,000 on the Scoville Scale.  That tis almost 100x hotter than a jalapeño.  You better pack a lunch cuz this one packs a punch!  Lips on fire is a common side effect.
+          </p>
+
+          <p class="title-sauce">HOT BUFFalo</p>
+          <p class="description-sauce">
+            This blend of spice and peppers is anchored by habanero, a little vinegar for tang.  It's spicy but not "slap yo mama" spicy.  Still pretty damn hot.  No for wussies! Lips will tingle for about 3 minutes.
+          </p>
+
+          <p class="title-sauce">YOU WON'T</p>
+          <p class="description-sauce">
+            This is probably more what you are use to.  Cayenne, jalapeño, crushed red chili, vinegar for tang and some butter to cut the heat (a little).  This will leave you wanting a nice frothy beverage with very little lingering sting.
+          </p>
+
+          <p class="title-sauce">You Better Not</p>
+          <p class="description-sauce">
+            Cayenne pepper, jalapeño and paprika with fresh ground garlic, tangy vinegar and smooth buttery flavor.  Don't be chicken to try this one.  Is has depth and it packs a nice punch!
+          </p>
+        </div> <!-- End third column -->
+      </div>
+
+    </div> <!-- End content container -->
+
+    <div id="footer"></div>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/map.js"></script>
+    <script>
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    <script>
+      $(function(){
+        $("#navbar").load("navbar.html", function() {
+          $("#navbar-title-sauces").addClass("active");
+        }); 
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </body>
+</html>

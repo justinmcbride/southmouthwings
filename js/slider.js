@@ -40,8 +40,8 @@ jQuery(document).ready(function ($) {
     };
 
     //Make the element 'slider1_container' visible before initialize jssor slider.
-    $("#slider1_container").css("display", "block");
-    var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+    $("#slider_container").css("display", "block");
+    var jssor_slider1 = new $JssorSlider$("slider_container", options);
 
     //responsive code begin
     //you can remove responsive code if you don't want the slider scales while window resizes
