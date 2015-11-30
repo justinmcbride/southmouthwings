@@ -32,9 +32,9 @@
           <div id="menu-listing-normal-wings">
             <p class="menu-title menu-title-normal-wings">Memphis Style Wings</p>
             <p class="menu-subitem-title">Jumbo Bone In Wings</p>
-            <p class="menu-subitem-info">$1 a wing - Increments of 5</p>
+            <p class="menu-subitem-info">$<span id="price_wings_bonein"></span> a wing - Increments of 5</p>
             <p class="menu-subitem-title">Bone-less</p>
-            <p class="menu-subitem-info">.50¢ a wing - Increments of 10</p>
+            <p class="menu-subitem-info"><span id="price_wings_boneless"></span>¢ a wing - Increments of 10</p>
           </div> <!-- End normal wings -->
 
           <div id="menu-listing-sauces">
@@ -68,7 +68,7 @@
           <div id="menu-listing-special-wings">
             <p class="menu-title menu-title-special-wings">Kick'n Crunch Wings</p>
             <div class="menu-special-wings-box"> <!-- Start special wings -->
-              <p class="menu-subitem-info">5 bone in  OR  10 bone-less... $7</p>
+              <p class="menu-subitem-info">5 bone in  OR  10 bone-less... $<span id="price_wings_special"></span></p>
               <p class="menu-special-wings-type">Funyun Wings</p>
               <p class="menu-item-info">Grizzlies golden honey rolled in Funyun crumbs</p>
               <p class="menu-special-wings-type">Wasabi Ginger Soy</p>
@@ -81,11 +81,11 @@
           <div id="menu-listing-apps">
             <p class="menu-title menu-title-apps">Whistle Wetters</p>
             <ul id="menu-listing-apps-list" class="list-unstyled">
-              <li>Homemade Mozzarella Cheese Stix…$8</li>
-              <li>Jalapeno Poppers…$7</li>
-              <li>Fried Mac-n-cheese…$6.50</li>
-              <li>Week Eddie Fries…(s) $4  (l) $6</li>
-              <li>Fried Pickle Spears…$6.50</li>
+              <li>Homemade Mozzarella Cheese Stix…$<span id="price_mozzarella_sticks"></span></li>
+              <li>Jalapeno Poppers…$<span id="price_poppers"></span></li>
+              <li>Fried Mac-n-cheese…$<span id="price_fried_mac"></span></li>
+              <li>Weak Eddie Fries…(s) $<span id="price_weak_eddie_small"></span>  (l) $<span id="price_weak_eddie_large"></span></li>
+              <li>Fried Pickle Spears…$<span id="price_fried_pickles"></span></li>
             </ul>
           </div> <!-- End appetizers -->
 
@@ -95,12 +95,12 @@
 
           <div id="menu-listing-memphis-fries">
             <p class="menu-title menu-title-memphis-fries">Memphis Fries</p>
-            <p class="menu-item-info">Huge pile of fries smothered in pulled pork, cowboy pickles, crispy onions, cheddar cheese and choice of sauce (we like BBQ)…$9</p>
+            <p class="menu-item-info">Huge pile of fries smothered in pulled pork, cowboy pickles, crispy onions, cheddar cheese and choice of sauce (we like BBQ)…$<span id="price_memphis_fries"></span></p>
           </div> <!-- End memphis fries -->
 
           <div id="menu-listing-sandwiches">
             <p class="menu-title menu-title-sandwiches">Sammiches</p>
-            <p class="menu-item-info">Large - $7.50   OR   4 Minis - $7.99</p>
+            <p class="menu-item-info">Large - $<span id="price_sandwich_large"></span>   OR   4 Minis - <span id="price_sandwich_mini"></span></p>
 
             <p class="menu-subitem-title">Smokin Pork</p>
             <p class="menu-subitem-info">Pulled smoked pork with crispy onions, sweet &amp; spicy cowboy pickles, cheddar and choice of sauce.</p>
@@ -111,8 +111,8 @@
           <div id="menu-listing-tenders">
             <p class="menu-title menu-title-tenders">Love Me Tenders</p>
             <p class="menu-subitem-title">Jumbo tenders w/fries &amp; sauce</p>
-            <p class="menu-subitem-info">3 Piece…$8.75</p>
-            <p class="menu-subitem-info">5 Piece…$11.75</p>
+            <p class="menu-subitem-info">3 Piece…$<span id="price_tenders_3"></span></p>
+            <p class="menu-subitem-info">5 Piece…$<span id="price_tenders_5"></span></p>
           </div>
 
         </div> <!-- End third column -->
@@ -122,17 +122,17 @@
 
         <div id="menu-listing-drinks" class="col-md-6"> <!-- Start drinks column -->
           <p class="menu-title menu-title-drinks">Drinks</p>
-          <p class="menu-subitem-title">Cup of Soda…$2</p>
+          <p class="menu-subitem-title">Cup of Soda…$<span id="price_drink_soda"></span></p>
           <p class="menu-subitem-info">(free South Mouth cup)</p>
-          <p class="menu-subitem-title">Gallon... $3.99</p>
+          <p class="menu-subitem-title">Gallon... $<span id="price_drink_gallon"></span></p>
           <p class="menu-subitem-info">(Kool-Aid, sweet tea, soda, lemonade)​</p>
         </div> <!-- End drinks column -->
 
         <div id="menu-listing-desserts" class="col-md-6"> <!-- Start desserts sections -->
           <p class="menu-title menu-title-desserts">Sweet Toof!</p>
-          <p class="menu-subitem-title">Chocolate Salty Balls…$5</p>
-          <p class="menu-subitem-title">Memphis Donuts…$4</p>
-          <p class="menu-subitem-title">Funnel Cake Fries…$5.99</p>
+          <p class="menu-subitem-title">Chocolate Salty Balls…$<span id="price_chocolate_balls"></span></p>
+          <p class="menu-subitem-title">Memphis Donuts…$<span id="price_memphis_donuts"></span></p>
+          <p class="menu-subitem-title">Funnel Cake Fries…$<span id="price_funnel_fries"></span></p>
         </div> <!-- End desserts sections -->
       </div> <!-- End second row -->
     </div> <!-- End content container -->
@@ -145,12 +145,21 @@
     <script src="bower_components/jssor-slider/js/jssor.slider.mini.js"></script>
 
     <script>
-      $(function(){
+      $(function() {
         $("#navbar").load("navbar.html", function() {
           $("#navbar-title-menu").addClass("active");
         }); 
         $("#footer").load("footer.html");
+        $.get("assets/prices.json", function(prices) {
+            for (var key in prices) {
+                if (prices.hasOwnProperty(key)) {
+                    $("#" + key).text(prices[key]);
+                }
+            }
+        });
       });
+
+
     </script>
   </body>
 </html>
