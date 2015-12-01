@@ -3,8 +3,9 @@ body {
   background: url('../assets/congruent_outline.png');
 }
 
-#content-container {
+#content_container {
 	background: url('../assets/halftone.png');
+    padding-top: 10px;
 }
 
 #whole-page-container {

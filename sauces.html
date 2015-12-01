@@ -26,8 +26,20 @@
     
     <div id="content-container" class="container">
 
+        <div class="row">
+            <div class="col-md-6">
+                <p class="title-type" id="title-wet">Wet Sauces</p>
+            </div>
+            <div class="col-md-3">
+                <p class="title-type" id="title-dry">Dry Rubs</p>
+            </div>
+            <div class="col-md-3">
+                <p class="title-type" id="title-crunch">Crunch Style</p>
+            </div>
+        </div>
+
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
           <p class="title-sauce">YOU BETTER NOT</p>
           <p class="description-sauce">
             This is no joke.  We are over 1,000,000 on the Scoville Scale.  That tis almost 100x hotter than a jalapeño.  You better pack a lunch cuz this one packs a punch!  Lips on fire is a common side effect.
@@ -49,7 +61,7 @@
           </p>
         </div> <!-- End first column -->
 
-        <div class="col-md-4">
+        <div class="col-md-3">
           <p class="title-sauce">HONEY HOT</p>
           <p class="description-sauce">
             Sweet and Heat, the perfect blend of peppers, spices and sweet Tupelo Honey (from the Tupelo Trees of Tennessee).  This may have a little more heat than sweet but we think the balance is perfect!
@@ -75,27 +87,43 @@
           </p>
         </div> <!-- End second column -->
 
-        <div class="col-md-4">
-          <p class="title-sauce">YOU BETTER NOT</p>
+        <div class="col-md-3" style="border-right: 2px #ddd">
+          <p class="title-sauce">JAMACIAN JERK <span class="badge">NEW</span></p>
           <p class="description-sauce">
-            This is no joke.  We are over 1,000,000 on the Scoville Scale.  That tis almost 100x hotter than a jalapeño.  You better pack a lunch cuz this one packs a punch!  Lips on fire is a common side effect.
+              A taste of the Carrabien. Our custom blend garlic powder, cayenne pepper, onion, thyme, parsley, brown sugar, salt,paprika, allspice, crushed red pepper, nutmeg, cinnamon.
+          </p>
+          <p class="title-sauce">SWEET LEMON PEPPER</p>
+          <p class="description-sauce">
+              Lemon, black and white pepper, garlic and confectionary sugar.  Tangy, bitter sweet and salty... yum!
           </p>
 
-          <p class="title-sauce">HOT BUFFalo</p>
+          <p class="title-sauce">MEMPHIS SWEET BBQ RUB</p>
           <p class="description-sauce">
-            This blend of spice and peppers is anchored by habanero, a little vinegar for tang.  It's spicy but not "slap yo mama" spicy.  Still pretty damn hot.  No for wussies! Lips will tingle for about 3 minutes.
+              Mesquite seasoning, brown sugar, molasses and salt.  Smoky sweet goodness!
           </p>
 
-          <p class="title-sauce">YOU WON'T</p>
+          <p class="title-sauce">WEAK EDDIE</p>
           <p class="description-sauce">
-            This is probably more what you are use to.  Cayenne, jalapeño, crushed red chili, vinegar for tang and some butter to cut the heat (a little).  This will leave you wanting a nice frothy beverage with very little lingering sting.
-          </p>
-
-          <p class="title-sauce">You Better Not</p>
-          <p class="description-sauce">
-            Cayenne pepper, jalapeño and paprika with fresh ground garlic, tangy vinegar and smooth buttery flavor.  Don't be chicken to try this one.  Is has depth and it packs a nice punch!
+              Our dry, ranch style rub with a kick of sweet and salty.  This one is a crowd favorite!
           </p>
         </div> <!-- End third column -->
+
+        <div class="col-md-3">
+            <p class="title-sauce">FUNYUN WINGS <span class="badge">NEW</span></p>
+            <p class="description-sauce">
+                Tossed in our Grizzlies Golden Honey and coated in Funyun ring crumbs, then drizzled with a little more Grizz.  The kids call this one "crack"!
+            </p>
+            <p class="title-sauce">WASABI GINGER SOY <span class="badge">NEW</span></p>
+            <p class="description-sauce">
+                We use our "secret sauce" on this one... honey ginger soy glazed wings rolled in wasabi crunch.  Sorry to do this to ya, but this is so cravable you'll need a fix at least once a week.  Buyer beware!
+            </p>
+
+            <p class="title-sauce">THAI ME UP <span class="badge">NEW</span></p>
+            <p class="description-sauce">
+                This one kicks back!  Thai, red & sambal chili glaze with a little sweet in the beginning rolled in our sriracha crunch.  HEAVEN!  This one tastes just as good cold as it does hot!
+            </p>
+        </div> <!-- End fourth column -->
+
       </div>
 
     </div> <!-- End content container -->
@@ -105,10 +133,6 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    <script src="js/map.js"></script>
-    <script>
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
     <script>
       $(function(){
         $("#navbar").load("navbar.html", function() {

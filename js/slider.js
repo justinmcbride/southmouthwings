@@ -1,4 +1,5 @@
-jQuery(document).ready(function ($) {
+$.getScript("bower_components/jssor-slider/js/jssor.slider.mini.js")
+  .done( function() {
   var options = {
     $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
     $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
