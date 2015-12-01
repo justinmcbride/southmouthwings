@@ -24,17 +24,14 @@
   <body>
     <div id="navbar" class="navbar"></div>
     
-    <div id="content-container" class="container">
+    <div id="content_container" class="container">
 
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-9">
                 <p class="title-type" id="title-wet">Wet Sauces</p>
             </div>
             <div class="col-md-3">
                 <p class="title-type" id="title-dry">Dry Rubs</p>
-            </div>
-            <div class="col-md-3">
-                <p class="title-type" id="title-crunch">Crunch Style</p>
             </div>
         </div>
 
@@ -55,10 +52,6 @@
             This is probably more what you are use to.  Cayenne, jalapeño, crushed red chili, vinegar for tang and some butter to cut the heat (a little).  This will leave you wanting a nice frothy beverage with very little lingering sting.
           </p>
 
-          <p class="title-sauce">SPICY GARLIC</p>
-          <p class="description-sauce">
-            Cayenne pepper, jalapeño and paprika with fresh ground garlic, tangy vinegar and smooth buttery flavor.  Don't be chicken to try this one.  Is has depth and it packs a nice punch!
-          </p>
         </div> <!-- End first column -->
 
         <div class="col-md-3">
@@ -67,10 +60,6 @@
             Sweet and Heat, the perfect blend of peppers, spices and sweet Tupelo Honey (from the Tupelo Trees of Tennessee).  This may have a little more heat than sweet but we think the balance is perfect!
           </p>
 
-          <p class="title-sauce">​ASAIN ASSULT</p>
-          <p class="description-sauce">
-            Sriracha, soy, ginger, garlic, honey, and a little love.  Ted Cohn's Favorite (He has ordered this one over 100 times).
-          </p>
           <p class="title-sauce">MEMPHIS SPICY BBQ</p>
           <p class="description-sauce">
             Our traditional Memphis BBQ sauce with a punch of cayenne, crushed red chili, jalapeño and a little smoke!
@@ -87,8 +76,30 @@
           </p>
         </div> <!-- End second column -->
 
+        <div class="col-md-3">
+            <p class="title-sauce">VOODOO <span class="badge">NEW</span></p>
+            <p class="description-sauce">
+                A fiery, cajun-inspired sauce.
+            </p>
+
+            <p class="title-sauce">THAI <span class="badge">NEW</span></p>
+            <p class="description-sauce">
+                This one kicks back!  Thai, red & sambal chili glaze with a little sweet in the beginning.  HEAVEN!  This one tastes just as good cold as it does hot!
+            </p>
+
+            <p class="title-sauce">SPICY GARLIC</p>
+            <p class="description-sauce">
+              Cayenne pepper, jalapeño and paprika with fresh ground garlic, tangy vinegar and smooth buttery flavor.  Don't be chicken to try this one.  Is has depth and it packs a nice punch!
+            </p>
+
+            <p class="title-sauce">​ASAIN ASSULT</p>
+            <p class="description-sauce">
+              Sriracha, soy, ginger, garlic, honey, and a little love.  Ted Cohn's Favorite (He has ordered this one over 100 times).
+            </p>
+        </div> <!-- End third column -->
+
         <div class="col-md-3" style="border-right: 2px #ddd">
-          <p class="title-sauce">JAMACIAN JERK <span class="badge">NEW</span></p>
+          <p class="title-sauce">JAMACIAN JERK</p>
           <p class="description-sauce">
               A taste of the Carrabien. Our custom blend garlic powder, cayenne pepper, onion, thyme, parsley, brown sugar, salt,paprika, allspice, crushed red pepper, nutmeg, cinnamon.
           </p>
@@ -106,23 +117,9 @@
           <p class="description-sauce">
               Our dry, ranch style rub with a kick of sweet and salty.  This one is a crowd favorite!
           </p>
-        </div> <!-- End third column -->
-
-        <div class="col-md-3">
-            <p class="title-sauce">FUNYUN WINGS <span class="badge">NEW</span></p>
-            <p class="description-sauce">
-                Tossed in our Grizzlies Golden Honey and coated in Funyun ring crumbs, then drizzled with a little more Grizz.  The kids call this one "crack"!
-            </p>
-            <p class="title-sauce">WASABI GINGER SOY <span class="badge">NEW</span></p>
-            <p class="description-sauce">
-                We use our "secret sauce" on this one... honey ginger soy glazed wings rolled in wasabi crunch.  Sorry to do this to ya, but this is so cravable you'll need a fix at least once a week.  Buyer beware!
-            </p>
-
-            <p class="title-sauce">THAI ME UP <span class="badge">NEW</span></p>
-            <p class="description-sauce">
-                This one kicks back!  Thai, red & sambal chili glaze with a little sweet in the beginning rolled in our sriracha crunch.  HEAVEN!  This one tastes just as good cold as it does hot!
-            </p>
         </div> <!-- End fourth column -->
+
+
 
       </div>
 
@@ -140,6 +137,15 @@
         }); 
         $("#footer").load("footer.html");
       });
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-70835955-1', 'auto');
+      ga('send', 'pageview');
     </script>
   </body>
 </html>

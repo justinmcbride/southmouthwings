@@ -2,12 +2,18 @@
 	color: #FF0000;
 }
 
-.menu-title-special-wings {
+.menu-title-fries {
 	color: #FF0000;
 }
 
 .menu-special-wings-box {
 	background-color: #FFAA56;
+}
+
+.menu-fries-addon {
+	font-family: 'Averia Sans Libre';
+	text-align: center;
+	margin: 0 0 0px;
 }
 
 .menu-special-wings-type {
@@ -68,6 +74,7 @@
 .menu-subitem-info {
 	text-align: center;
 	font-family: 'Averia Sans Libre';
+	margin: 0 0 0px;
 }
 
 #menu-listing-apps-list {
