@@ -10,7 +10,7 @@
     <link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great|Cabin+Sketch|Averia+Sans+Libre|Fjalla+One' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/navbar.css">
-      <link rel="stylesheet" href="css/order_banner.css">
+    <link rel="stylesheet" href="css/order_banner.css">
     <link rel="stylesheet" href="css/content.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/menu.css">
@@ -23,8 +23,8 @@
   <body>
 
   <div id="whole-page-container" class="fluid-container">
-    <div id="navbar"></div>
-      <div id="order_banner" class="row text-center"></div>
+    <div id="nav_bar"></div>
+    <div id="order_banner" class="row text-center"></div>
     
     <div id="content_container" class="container">
       <div class="row"> <!-- Start first row -->
@@ -38,6 +38,8 @@
             <p class="menu-subitem-info">Increments of 10...$<span id="price_wings_boneless"></span></p>
           </div> <!-- End normal wings -->
 
+          <div class="col-xs-12" style="height:25px;"></div>
+
           <div id="menu-listing-sauces">
             <p class="menu-title menu-title-sauces">The Flavas</p>
             <p class="menu-subitem-title">Make 'Em Wet</p>
@@ -46,8 +48,8 @@
               <li class="menu-item-sauce">Hot Buffalo (HOT)</li>
               <li class="menu-item-sauce">You Won't (Medium)</li>
               <li class="menu-item-sauce">Spicy Garlic</li>
-              <li class="menu-item-sauce">Thai</li>
-              <li class="menu-item-sauce">VooDoo</li>
+              <li class="menu-item-sauce">Thai <span class="badge">NEW</span></li>
+              <li class="menu-item-sauce">VooDoo <span class="badge">NEW</span></li>
               <li class="menu-item-sauce">Honey Hot</li>
               <li class="menu-item-sauce">Asian Assault</li>
               <li class="menu-item-sauce">Memphis Spicy BBQ</li>
@@ -88,7 +90,7 @@
 
           <div id="menu-listing-apps">
             <p class="menu-title menu-title-apps">Whistle Wetters</p>
-            <div class="menu-subitem-info">Smokin' Onion Strips…$<span id="price_onion_strips"></span></div>
+            <div class="menu-subitem-info">Smokin' Onion Strips…$<span id="price_onion_strips"></span> <span class="badge">NEW</span></div>
             <div class="menu-subitem-info">Jalapeno Poppers…$<span id="price_poppers"></span></div>
             <div class="menu-subitem-info">Fried Mac-n-cheese…$<span id="price_fried_mac"></span></div>
             <div class="menu-subitem-info">Fried Pickle Spears…$<span id="price_fried_pickles"></span></div>
@@ -103,6 +105,8 @@
             <p class="menu-subitem-info">Huge pile of fries smothered in pulled pork, cowboy pickles, crispy onions, cheddar cheese and choice of sauce (we like BBQ)…$<span id="price_memphis_fries"></span></p>
           </div> <!-- End memphis fries -->
 
+          <div class="col-xs-12" style="height:25px;"></div>
+
           <div id="menu-listing-sandwiches">
             <p class="menu-title menu-title-sandwiches">Sammiches</p>
             <p class="menu-subitem-info">Large - $<span id="price_sandwich_large"></p>
@@ -111,9 +115,11 @@
             <p class="menu-subitem-info">Pulled smoked pork with crispy onions, sweet &amp; spicy cowboy pickles, cheddar and choice of sauce.</p>
             <p class="menu-subitem-title">The Hot Chick</p>
             <p class="menu-subitem-info">Crispy Chicken, pickles, Grizzlies golden honey.</p>
-            <p class="menu-subitem-title">The Buff Chick</p>
+            <p class="menu-subitem-title">The Buff Chick <span class="badge">NEW</span></p>
             <p class="menu-subitem-info">Chicken tenders tossed in our "You Won’t" Medium Buffalo sauce, topped with blue cheese crumbles, served on a toasted King’s Hawaiian Bun.</p>
           </div> <!-- End sandwiches -->
+
+          <div class="col-xs-12" style="height:25px;"></div>
 
           <div id="menu-listing-tenders">
             <p class="menu-title menu-title-tenders">Love Me Tenders</p>
@@ -149,36 +155,25 @@
 
     <div id="footer"></div>
 
+    <script src="js/analytics.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    <script src="bower_components/jssor-slider/js/jssor.slider.mini.js"></script>
 
     <script>
-      $(function() {
-        $("#navbar").load("navbar.html", function() {
-          $("#navbar-title-menu").addClass("active");
-        });
-          $("#order_banner").load("order_banner.html");
-        $("#footer").load("footer.html");
-        $.get("assets/prices.json")
-            .done(function(prices) {
-                for (var key in prices) {
-                    if (prices.hasOwnProperty(key)) {
-                        $("#" + key).text(prices[key]);
-                    }
+      $("#nav_bar").load("navbar.html", function() {
+        $("#navbar-title-menu").addClass("active");
+      });
+      $("#order_banner").load("order_banner.html");
+      $("#footer").load("footer.html");
+      $.get("assets/prices.json")
+        .done(function(prices) {
+            for (var key in prices) {
+                if (prices.hasOwnProperty(key)) {
+                    $("#" + key).text(prices[key]);
                 }
-            });
+            }
         });
-    </script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-70835955-1', 'auto');
-      ga('send', 'pageview');
     </script>
   </body>
 </html>
