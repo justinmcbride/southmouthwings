@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/order_banner.css">
     <link rel="stylesheet" href="css/content.css">
     <link rel="stylesheet" href="css/footer.css">
-
     <link rel="stylesheet" href="css/index.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -25,7 +24,7 @@
   </head>
   <body>
     <div id="nav_bar"></div>
-    <div id="order_banner" class="row text-center"></div>
+    <div id="order_banner" class="text-center"></div>
     <div id="content_container" class="container"></div>
     <div id="footer"></div>
 
@@ -36,7 +35,8 @@
         $("#navbar-title-home").addClass("active");
       });
       $("#order_banner").load("order_banner.html");
-      $("#content_container").load("content_index.html", function() {
+      $("#content_container").load("content_index.html")
+        .done(function() {
           var script = document.createElement('script');
           script.src = "js/slider.js";
           document.getElementsByTagName('head')[0].appendChild(script);
