@@ -35,12 +35,11 @@
         $("#navbar-title-home").addClass("active");
       });
       $("#order_banner").load("order_banner.html");
-      $("#content_container").load("content_index.html")
-        .done(function() {
+      $("#content_container").load("content_index.html", function() {
           var script = document.createElement('script');
           script.src = "js/slider.js";
           document.getElementsByTagName('head')[0].appendChild(script);
-      });
+        });
 
       $("#footer").load("footer.html");
     </script>
