@@ -13,6 +13,10 @@
 	font-weight: bold;
 }
 
+#navbar-title-order {
+	color: red;
+}
+
 #navbar-logo {
 	height: 50px;
 }
