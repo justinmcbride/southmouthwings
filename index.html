@@ -24,6 +24,8 @@
   </head>
   <body>
     <div id="nav_bar"></div>
+    <div id="information" class="container"></div>
+    
     <div id="order_banner" class="text-center"></div>
     <div id="content_container" class="container"></div>
     <div id="footer"></div>
@@ -34,6 +36,7 @@
       $("#nav_bar").load("navbar.html", function() {
         $("#navbar-title-home").addClass("active");
       });
+      $("#information").load("information.html");
       $("#order_banner").load("order_banner.html");
       $("#content_container").load("content_index.html", function() {
           var script = document.createElement('script');

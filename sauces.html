@@ -24,6 +24,7 @@
   </head>
   <body>
     <div id="nav_bar"></div>
+    <div id="information" class="container"></div>
     <div id="order_banner" class="text-center"></div>
     <div id="content_container" class="container">
       <div class="row">
@@ -131,6 +132,7 @@
       $("#nav_bar").load("navbar.html", function() {
         $("#navbar-title-sauces").addClass("active");
       });
+      $("#information").load("information.html");
       $("#order_banner").load("order_banner.html");
       $("#footer").load("footer.html");
     </script>
