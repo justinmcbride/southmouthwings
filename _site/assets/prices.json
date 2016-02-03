@@ -1,0 +1,34 @@
+{
+  "price_poppers": "7",
+  "price_onion_strips": "7",
+  "price_fried_mac": "6.50",
+  "price_fried_pickles": "6.50",
+
+  "price_fries_small": "3",
+  "price_fries_large": "5",
+  "price_fries_addon_weakeddie": "1",
+  "price_fries_addon_garlicspice": "1",
+  "price_fries_addon_cajun": "1",
+  "price_fries_addon_lemonpepper": "1",
+  "price_fries_addon_memphisrub": "1",
+  "price_fries_addon_nachocheese": "1",
+  "price_fries_addon_tenders": "2",
+  "price_fries_addon_jalapenos": "0.30",
+
+  "price_wings_boneless": "6",
+  "price_wings_bonein": "6",
+  "price_wings_special": "7",
+
+  "price_tenders_3": "8.75",
+  "price_tenders_5": "11.75",
+
+  "price_sandwich_large": "7.99",
+
+  "price_memphis_fries": "9",
+  "price_drink_soda": "2",
+  "price_drink_gallon": "3.99",
+
+  "price_chocolate_balls": "5",
+  "price_memphis_donuts": "4",
+  "price_funnel_fries": "5.50"
+}

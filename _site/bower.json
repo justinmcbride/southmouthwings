@@ -1,0 +1,23 @@
+{
+  "name": "southmouthwings",
+  "homepage": "https://github.com/dare599z/southmouthwings",
+  "authors": [
+    "Justin McBride <justin@dare599z.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jssor-slider": "*"
+  }
+}
