@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <div id="nav_bar">{% include navbar.html %}</div>
+    <div id="information" class="container">{% include information.html %}</div>
+    <div id="order_banner" class="text-center">{% include order_banner.html %}</div>
+
+    <div id="content_container" class="container">{{ content }}</div>
+
+    <div id="footer">{% include footer.html %}</div>
+
+    {% for script_name in page.extra_scripts %}
+      <script src="{{ script_name }}"></script>
+    {% endfor %}
+
+    {% if page.ready_script %}
+      <script>
+        $(document).ready(function() {
+          {{ page.ready_script }}
+        })
+      </script>
+    {% endif %}
+  </body>
+</html>
