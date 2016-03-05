@@ -1,27 +1,41 @@
+#slides_container {
+  width: 1280px;
+  height: 720px;
+  cursor: move;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+#slides_container img {
+  max-width:100%;
+  max-height:100%;
+}
+
 #slider_container {
-    display: none;
-    position: relative;
-    margin: 0 auto;
-    width: 1000px;
-    height: 500px;
-    overflow: hidden;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 1280px;
+  height: 720px;
 }
 
 #weclome_header {
-    font-family: 'Vast Shadow';
-    font-size: 42px;
+  font-family: 'Vast Shadow';
+  font-size: 42px;
 }
 
 #phone_number {
-    font-family: 'Cabin Sketch';
-    font-weight: bold;
-    font-size: 50px;
+  font-family: 'Cabin Sketch';
+  font-weight: bold;
+  font-size: 50px;
 }
 
 #hours_title {
-    font-size: 32px;
-    font-weight: bold;
-    font-family: 'Cabin Sketch';
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Cabin Sketch';
 }
 
 /**************************/
@@ -29,14 +43,14 @@
 /**************************/
 
 .jssora11l, .jssora11r {
-    display: block;
-    position: absolute;
-    /* size of arrow element */
-    width: 37px;
-    height: 37px;
-    cursor: pointer;
-    background: url('../bower_components/jssor-slider/img/a11.png') no-repeat;
-    overflow: hidden;
+  display: block;
+  position: absolute;
+  /* size of arrow element */
+  width: 37px;
+  height: 37px;
+  cursor: pointer;
+  background: url('../bower_components/jssor-slider/img/a11.png') no-repeat;
+  overflow: hidden;
 }
 
 .jssora11l { background-position: -11px -41px; }
