@@ -1,0 +1,87 @@
+.menu-title-normal-wings {
+	color: #FF0000;
+}
+
+.menu-title-fries {
+	color: #FF0000;
+}
+
+.menu-special-wings-box {
+	background-color: #FFAA56;
+}
+
+.menu-fries-addon {
+	font-family: 'Averia Sans Libre';
+	text-align: center;
+	margin: 0 0 0px;
+}
+
+.menu-special-wings-type {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 22px;
+	font-family: 'Fredericka the Great';
+}
+
+.menu-title-memphis-fries {
+	color: #FF8C00;
+}
+
+.menu-title-sauces {
+	color: #FF8C00;
+}
+
+.menu-title-sandwiches {
+	color: #FF0000;
+}
+
+.menu-title {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: 'Cabin Sketch';
+	font-size: 42px;
+	text-align: center;
+	line-height: 1;
+}
+
+.menu-title-apps {
+	color: #800000;
+}
+
+.menu-title-tenders {
+	color: #FF8C00;
+}
+
+.menu-title-drinks {
+	color: #40E0D0;
+}
+
+.menu-title-desserts {
+	color: #8B4513;
+}
+
+.menu-item-info {
+	text-align: center;
+}
+
+.menu-subitem-title {
+	text-transform: uppercase;
+	font-family: 'Averia Sans Libre';
+	font-size: 20px;
+	text-align: center;
+}
+
+.menu-subitem-info {
+	text-align: center;
+	font-family: 'Averia Sans Libre';
+	margin: 0 0 0px;
+}
+
+#menu-listing-apps-list {
+	text-align: center;
+}
+
+.menu-item-sauce {
+	font-family: 'Averia Sans Libre';
+	text-align: center;
+}

@@ -1,0 +1,61 @@
+#slides_container {
+  width: 1280px;
+  height: 720px;
+  cursor: move;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+#slides_container img {
+  max-width:100%;
+  max-height:100%;
+}
+
+#slider_container {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 1280px;
+  height: 720px;
+}
+
+#weclome_header {
+  font-family: 'Vast Shadow';
+  font-size: 42px;
+}
+
+#phone_number {
+  font-family: 'Cabin Sketch';
+  font-weight: bold;
+  font-size: 50px;
+}
+
+#hours_title {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Cabin Sketch';
+}
+
+/**************************/
+/* JSSOR Slider components*/
+/**************************/
+
+.jssora11l, .jssora11r {
+  display: block;
+  position: absolute;
+  /* size of arrow element */
+  width: 37px;
+  height: 37px;
+  cursor: pointer;
+  background: url('../bower_components/jssor-slider/img/a11.png') no-repeat;
+  overflow: hidden;
+}
+
+.jssora11l { background-position: -11px -41px; }
+.jssora11r { background-position: -71px -41px; }
+.jssora11l:hover { background-position: -131px -41px; }
+.jssora11r:hover { background-position: -191px -41px; }
+.jssora11l.jssora11ldn { background-position: -251px -41px; }
+.jssora11r.jssora11rdn { background-position: -311px -41px; }

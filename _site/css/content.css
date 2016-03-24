@@ -1,0 +1,13 @@
+body {
+  /*padding-top:150px;*/
+  background: url('../assets/congruent_outline.png');
+}
+
+#content_container {
+	background: url('../assets/halftone.png');
+    padding-top: 10px;
+}
+
+#whole-page-container {
+	background: url('../assets/congruent_outline.png');
+}
