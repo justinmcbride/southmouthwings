@@ -10,5 +10,9 @@
 }
 
 #story-title {
-	
+	font-weight: bold;
+  font-size: 40px;
+  font-family: 'Cabin Sketch';
+  text-align: center;
+  line-height: 1;
 }
