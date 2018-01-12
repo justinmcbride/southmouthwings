@@ -53,7 +53,7 @@
         <li id="navbar_locate" class="navbar-title"><a href="location.html">Find Us</a></li>
         <li id="navbar_sauces" class="navbar-title"><a href="sauces.html">Our Sauces</a></li>
         <li class="navbar-title"><a href="assets/application.pdf">Apply</a></li>
-        <li class="navbar-title"><a id="navbar-title-order" href="http://www.grubhub.com/r/w/34848/restaurant/318294/">Order Now</a></li>
+        <li class="navbar-title"><a id="navbar-title-order" href="https://lazybuffs.com/south-mouth-wings">Order Now</a></li>
       </ul>
     </div>
   </div>
@@ -84,40 +84,56 @@
 
     <div id="content_container" class="container"><div class="row"> <!-- Start first row -->
   <div class="col-md-4"> <!-- Start first column -->
-
     <div id="menu-listing-normal-wings">
       <p class="menu-title menu-title-normal-wings">Memphis Style Wings</p>
-      <p class="menu-subitem-title">Jumbo Bone In Wings</p>
-      <p class="menu-subitem-info">Increments of 5...$<span id="price_wings_bonein"></span></p>
-      <p class="menu-subitem-title">Bone-less</p>
-      <p class="menu-subitem-info">Increments of 10...$<span id="price_wings_boneless"></span></p>
+      <p class="menu-special-wings-type">Jumbo Bone In Wings</p>
+      <div class="row">
+        <div class="col-md-6">
+          <p class="menu-subitem-info">5...$6.79</p>
+          <p class="menu-subitem-info">10...$12.79</p>
+          <p class="menu-subitem-info">15...$18.79</p>
+          <p class="menu-subitem-info">20...$24</p>
+          <p class="menu-subitem-info">25...$30</p>
+        </div>
+        <div class="col-md-6">
+          <p class="menu-subitem-info">30...$36</p>
+          <p class="menu-subitem-info">35...$42</p>
+          <p class="menu-subitem-info">40...$48</p>
+          <p class="menu-subitem-info">45...$54</p>
+          <p class="menu-subitem-info">50...$60</p>
+        </div>
+      </div>
+      <p class="menu-special-wings-type">Boneless</p>
+      <p class="menu-subitem-info">Increments of 10...$6.79</p>
+      
     </div> <!-- End normal wings -->
 
     <div class="col-xs-12" style="height:25px;"></div>
 
     <div id="menu-listing-sauces">
       <p class="menu-title menu-title-sauces">The Flavas</p>
-      <p class="menu-subitem-title">Make 'Em Wet</p>
+      <p class="menu-special-wings-type">Make 'Em Wet</p>
       <ul id="menu-listing-sauces-wet" class="list-unstyled">
         <li class="menu-item-sauce">You Better Not (Waiver Required)</li>
         <li class="menu-item-sauce">Hot Buffalo (HOT)</li>
         <li class="menu-item-sauce">You Won't (Medium)</li>
-        <li class="menu-item-sauce">VooDoo <span class="badge">NEW</span></li>
+        <li class="menu-item-sauce">VooDoo (Cajun Buffalo)</li>
         <li class="menu-item-sauce">Spicy Garlic</li>
         <li class="menu-item-sauce">Honey Hot</li>
         <li class="menu-item-sauce">Asian Assault</li>
-        <li class="menu-item-sauce">Thai <span class="badge">NEW</span></li>
+        <li class="menu-item-sauce">Thai</li>
         <li class="menu-item-sauce">Memphis Spicy BBQ</li>
         <li class="menu-item-sauce">Memphis Sweet BBQ</li>
         <li class="menu-item-sauce">Grizzlies Golden Honey</li>
       </ul>
 
-      <p class="menu-subitem-title">Make 'Em Dry</p>
+      <p class="menu-special-wings-type">Make 'Em Dry</p>
       <ul id="menu-listing-sauces-dry" class="list-unstyled">
-        <li class="menu-item-sauce">Jamaican Dry</li>
+        <li class="menu-item-sauce">Jamaican Jerk</li>
         <li class="menu-item-sauce">Sweet Lemon Pepper</li>
         <li class="menu-item-sauce">Memphis Sweet BBQ Rub</li>
-        <li class="menu-item-sauce">Weak Eddie</li>
+        <li class="menu-item-sauce">Weak Eddie Seasoning</li>
+        <li class="menu-item-sauce">Garlic Seasoning</li>
       </ul>
     </div> <!-- End sauces -->
 
@@ -126,97 +142,96 @@
   <div class="col-md-4"> <!-- Start second column -->
 
     <div id="menu-listing-special-wings">
-      <p class="menu-title menu-title-fries">Southern Fries</p>
-      <div class="menu-special-wings-box"> <!-- Start fries -->
-        <div class="menu-subitem-info">Small..$<span id="price_fries_small"></span>  Large..$<span id="price_fries_large"></span></div>
+      <p class="menu-title menu-title-fries">House-Cut Fries</p>
+      <div class=""> <!-- Start fries -->
+        <div class="menu-subitem-info">Small..$3.19  Large..$5.19</div>
         <div class="menu-special-wings-type">Optional toppings:</div>
-        <div class="menu-fries-addon">Weak Eddie.. +$<span id="price_fries_addon_weakeddie"></span></div>
-        <div class="menu-fries-addon">Garlic Spice.. +$<span id="price_fries_addon_garlicspice"></span></div>
-        <div class="menu-fries-addon">Cajun.. +$<span id="price_fries_addon_cajun"></span></div>
-        <div class="menu-fries-addon">Lemon Pepper.. +$<span id="price_fries_addon_lemonpepper"></span></div>
-        <div class="menu-fries-addon">Memphis Sweet BBQ Rub.. +$<span id="price_fries_addon_memphisrub"></span></div>
-        <div class="menu-fries-addon">Nacho Cheese.. +$<span id="price_fries_addon_nachocheese"></span></div>
-        <div class="menu-fries-addon">Chicken Tenders.. +$<span id="price_fries_addon_tenders"></span></div>
-        <div class="menu-fries-addon">Jalapeños.. +$<span id="price_fries_addon_jalapenos"></span></div>
+        <div class="menu-fries-addon">ADD A DRY RUB.. +$1</div>
+        <div class="menu-fries-addon">Nacho Cheese.. +$1</div>
+        <div class="menu-fries-addon">Chicken Tenders.. +$2</div>
+        <div class="menu-fries-addon">Jalapeños.. +$0.50</div>
       </div> 
     </div> <!-- End fries -->
 
-    <div class="col-xs-12" style="height:50px;"></div>
-
-    <div id="menu-listing-apps">
-      <p class="menu-title menu-title-apps">Whistle Wetters</p>
-      <div class="menu-subitem-info">Smokin' Onion Strips…$<span id="price_onion_strips"></span> <span class="badge">NEW</span></div>
-      <div class="menu-subitem-info">Jalapeno Poppers…$<span id="price_poppers"></span></div>
-      <div class="menu-subitem-info">Fried Mac-n-cheese…$<span id="price_fried_mac"></span></div>
-      <div class="menu-subitem-info">Fried Pickle Spears…$<span id="price_fried_pickles"></span></div>
-    </div> <!-- End appetizers -->
-
-  </div> <!-- End second column -->
-
-  <div class="col-md-4"> <!-- Start third column -->
+    <div class="col-xs-12" style="height:25px;"></div>
 
     <div id="menu-listing-memphis-fries">
       <p class="menu-title menu-title-memphis-fries">Memphis Fries</p>
-      <p class="menu-subitem-info">Huge pile of fries smothered in pulled pork, cowboy pickles, crispy onions, cheddar cheese and choice of sauce (we like BBQ)…$<span id="price_memphis_fries"></span></p>
+      <p class="menu-subitem-info">Huge pile of fries smothered in pulled pork, our candied jalapeños, crispy onions, cheddar cheese and sweet or spicy BBQ...$9.79</span></p>
     </div> <!-- End memphis fries -->
 
     <div class="col-xs-12" style="height:25px;"></div>
 
-    <div id="menu-listing-sandwiches">
-      <p class="menu-title menu-title-sandwiches">Sammiches</p>
-      <p class="menu-subitem-info">Large - $<span id="price_sandwich_large"></p>
-
-      <div class="menu-subitem-title">Smokin' Pork</div>
-      <div class="menu-subitem-info">Hawaiian sweet bread, loaded with crispy onions, sweet and spicy cowboy pickles, cheddar, and BBQ pulled pork.</div>
-      <div class="menu-subitem-title">The Hot Chick</div>
-      <div class="menu-subitem-info">Hawaiian sweet bread, loaded with chicken tenders and fried pickles, then smothered in our Grizzlies golden honey sauce.</div>
-      <div class="menu-subitem-title">The Buff Chick <span class="badge">NEW</span></div>
-      <div class="menu-subitem-info">Chicken tenders tossed in our "You Won’t" Medium Buffalo sauce, topped with blue cheese crumbles, served on a toasted King’s Hawaiian Bun.</div>
-    </div> <!-- End sandwiches -->
+    <div id="menu-listing-apps">
+      <p class="menu-title menu-title-apps">Whistle Wetters</p>
+      <div class="menu-subitem-info">Smokin' Onion Strips...$7</div>
+      <div class="menu-subitem-info"><span class="badge">NEW</span>Coleslaw...$2.79</span></div>
+      <div class="menu-subitem-info">Fried Mac n' cheese...$6.79</div>
+      <div class="menu-subitem-info">Sweet Corn Nuggets...$5.19</div>
+      <div class="menu-subitem-info">Jalapeño Poppers...$7</div>
+      <div class="menu-subitem-info">Hush Puppies...$7</div>
+      <div class="menu-subitem-info">Fried Pickle Spears...$6.79</div>
+    </div> <!-- End appetizers -->
 
     <div class="col-xs-12" style="height:25px;"></div>
 
     <div id="menu-listing-tenders">
       <div class="menu-title menu-title-tenders">Love Me Tenders</div>
-      <div class="menu-subitem-title">Jumbo tenders w/ fries &amp; sauce</div>
-      <div class="menu-subitem-info">3 Piece…$<span id="price_tenders_3"></span></div>
-      <div class="menu-subitem-info">5 Piece…$<span id="price_tenders_5"></span></div>
+      <div class="menu-subitem-title">Chicken tenders served with fries &amp; choice of sauce</div>
+      <div class="menu-subitem-info">3 Piece...$8.79</div>
+      <div class="menu-subitem-info">5 Piece...$11.79</div>
     </div>
+  </div> <!-- End second column -->
+
+  <div class="col-md-4"> <!-- Start third column -->
+
+    <div id="menu-listing-sandwiches">
+      <p class="menu-title menu-title-sandwiches">Sammiches</p>
+      <p class="menu-subitem-info">All sandwiches - $9</p>
+
+      <div class="menu-subitem-title">Smokin' Pork</div>
+      <div class="menu-subitem-info">Hawaiian sweet bread, loaded with crispy onions, cheese, candied jalapeños, and BBQ pulled pork.</div>
+      <div class="menu-subitem-title">Memphis Pork<span class="badge">NEW</span></div>
+      <div class="menu-subitem-info">Hawaiian sweet bread loaded with BBQ pulled pork and homemade coleslaw.</div>
+      <div class="menu-subitem-title">The Hot Chick</div>
+      <div class="menu-subitem-info">Chicken tenders and fried pickles tossed in Grizzlies Golden Honey atop hawaiian sweet bread.</div>
+      <div class="menu-subitem-title">The Buff Chick</div>
+      <div class="menu-subitem-info">Chicken tenders tossed in our "You Won’t" medium buffalo sauce, topped with blue cheese crumbles.</div>
+    </div> <!-- End sandwiches -->
+
+    <div class="col-xs-12" style="height:25px;"></div>
+
+    <div id="menu-listing-drinks"> <!-- Start drinks column -->
+      <p class="menu-title menu-title-drinks">Drinks</p>
+      <p class="menu-subitem-title">20oz CUP... $2.19</p>
+      <p class="menu-subitem-title">GALLON JUG... $4.49</p>
+      <p class="menu-subitem-info">Kool-Aid (Gallon only)</p>
+      <p class="menu-subitem-info">Lemonade</p>
+      <p class="menu-subitem-info">Sweet/Unsweet Tea</p>
+      <p class="menu-subitem-info">Pepsi, Diet Pepsi, Orange Crush, Dr. Pepper</p>
+      <p class="menu-subitem-info">Mountain Dew, Sierra Mist, Gatorade Fruit Punch</p>
+    </div> <!-- End drinks column -->
+
+    <div class="col-xs-12" style="height:25px;"></div>
+
+    <div id="menu-listing-desserts"> <!-- Start desserts sections -->
+      <p class="menu-title menu-title-desserts">Sweet Toof!</p>
+      <p class="menu-subitem-title">Chocolate Salty Balls...$4.99</p>
+      <p class="menu-subitem-title">Memphis Donuts...$4.19</p>
+      <p class="menu-subitem-title">Funnel Cake Fries...$5.59</p>
+    </div> <!-- End desserts sections -->
 
   </div> <!-- End third column -->
-</div> <!-- End first row -->
-
-<div class="row"> <!-- Start second row -->
-
-  <div id="menu-listing-drinks" class="col-md-6"> <!-- Start drinks column -->
-    <p class="menu-title menu-title-drinks">Drinks</p>
-    <p class="menu-subitem-title">South Mouth Cup... $<span id="price_drink_soda"></span></p>
-    <p class="menu-subitem-title">Gallon... $<span id="price_drink_gallon"></span></p>
-    <p class="menu-subitem-info">Kool-Aid</p>
-    <p class="menu-subitem-info">Lemonade</p>
-    <p class="menu-subitem-info">Sweet/Unsweet Tea</p>
-    <p class="menu-subitem-info">Pepsi, Diet Pepsi, Cherry Pepsi, Orange Crush</p>
-    <p class="menu-subitem-info">Mountain Dew, Sierra Mist, Gatorade Fruit Punch</p>
-  </div> <!-- End drinks column -->
-
-  <div id="menu-listing-desserts" class="col-md-6"> <!-- Start desserts sections -->
-    <p class="menu-title menu-title-desserts">Sweet Toof!</p>
-    <p class="menu-subitem-title">Chocolate Salty Balls…$<span id="price_chocolate_balls"></span></p>
-    <p class="menu-subitem-title">Memphis Donuts…$<span id="price_memphis_donuts"></span></p>
-    <p class="menu-subitem-title">Funnel Cake Fries…$<span id="price_funnel_fries"></span></p>
-  </div> <!-- End desserts sections -->
-</div> <!-- End second row --></div>
+</div> <!-- End first row --></div>
 
     <div id="footer"><footer class="footer">
   <div class="container">
     <p class="text-muted">South Mouth Wings</p>
     <p class="text-muted">1650 Broadway @ the corner of Broadway and Arapahoe.</p>
-    <p class="text-right text-muted">Copyright 2015 All Rights Reserved</p> 
+    <p class="text-right text-muted">Copyright 2017 All Rights Reserved</p> 
   </div>
 </footer></div>
 
-    
-      <script src="js/prices.js"></script>
     
 
     

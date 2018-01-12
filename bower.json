@@ -18,6 +18,6 @@
   ],
   "dependencies": {
     "bootstrap": "~3.3.5",
-    "jssor-slider": "*"
+    "jssor-slider": "~20.0.0"
   }
 }
