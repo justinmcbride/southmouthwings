@@ -42,20 +42,28 @@
 /* JSSOR Slider components*/
 /**************************/
 
-.jssora11l, .jssora11r {
-  display: block;
-  position: absolute;
-  /* size of arrow element */
-  width: 37px;
-  height: 37px;
-  cursor: pointer;
-  background: url('../bower_components/jssor-slider/img/a11.png') no-repeat;
-  overflow: hidden;
+.jssora051 {
+  display:block;
+  position:absolute;
+  cursor:pointer;
 }
 
-.jssora11l { background-position: -11px -41px; }
-.jssora11r { background-position: -71px -41px; }
-.jssora11l:hover { background-position: -131px -41px; }
-.jssora11r:hover { background-position: -191px -41px; }
-.jssora11l.jssora11ldn { background-position: -251px -41px; }
-.jssora11r.jssora11rdn { background-position: -311px -41px; }
+.jssora051 .a {
+  fill:none;
+  stroke:#fff;
+  stroke-width:360;
+  stroke-miterlimit:10;
+}
+
+.jssora051:hover {
+  opacity:.8;
+}
+
+.jssora051.jssora051dn {
+  opacity:.5;
+}
+
+.jssora051.jssora051ds {
+  opacity:.3;
+  pointer-events:none;
+}
