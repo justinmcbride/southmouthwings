@@ -2,8 +2,20 @@
 	color: #FF0000;
 }
 
+.menu-title-boneless-wings {
+	color: rgb(255, 179, 0);
+}
+
 .menu-title-fries {
-	color: #FF0000;
+	color: rgb(223, 85, 47);
+}
+
+.menu-title-cauliflower {
+	color: rgb(193, 45, 4);
+}
+
+.menu-title-kids {
+	color: rgb(193, 99, 4);
 }
 
 .menu-special-wings-box {
@@ -25,6 +37,10 @@
 
 .menu-title-memphis-fries {
 	color: #FF8C00;
+}
+
+.menu-title-buff-fries {
+	color: rgb(255, 106, 0);
 }
 
 .menu-title-sauces {
